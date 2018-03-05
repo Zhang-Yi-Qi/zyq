@@ -1,0 +1,11 @@
+function isBigEnough(element, index, array) {
+  console.log(index);
+  return (element >= 10);
+}
+var passed = [12, 5, 8, 130, 44].every(isBigEnough);
+// 0
+// 1
+// passed is false
+passed = [12, 54, 18, 130, 44].every(isBigEnough);
+// 0 1 2 3 4
+// passed is true
