@@ -1,0 +1,8 @@
+var a1 = [1, 2, 3],
+  a2 = [4, 5, 6],
+  a3 = [7, 8, 9];
+var newarr = a1.concat(a2, a3);
+newarr //[1, 2, 3, 4, 5, 6, 7, 8, 9]
+a1 //[1, 2, 3]
+newarr = a1.concat(4, a3);//[1, 2, 3, 4, 7, 8, 9]
+newarr = a1.concat('hello');//[1, 2, 3, "hello"]
